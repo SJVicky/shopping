@@ -26,6 +26,11 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       '@': resolve('src'),
+      'components':resolve('src/components'),
+      'assets':resolve('src/assets'),
+      'network':resolve('src/network'),
+      'utils':resolve('src/utils'),
+      'views':resolve('src/views'),
     }
   },
   module: {
@@ -39,6 +44,10 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+      },
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader",
       },
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
