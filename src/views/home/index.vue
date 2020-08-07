@@ -10,8 +10,8 @@
 <script>
 import NavBar from 'components/common/navbar/NavBar'
 import HomeSwiper from './childComps/HomeSwiper'
-import BannerFirst from 'assets/images/banner/banner-1.png'
-import BannerSecond from 'assets/images/banner/banner-2.png'
+// import BannerFirst from 'assets/images/banner/banner-1.png'
+// import BannerSecond from 'assets/images/banner/banner-2.png'
 export default {
     components:{
         NavBar,
@@ -21,12 +21,12 @@ export default {
         return{
             banners:[
                 {
-                    image:BannerFirst,
+                    image:'',
                     link:'http://www.baidu.com',
                     id:'1'
                 },
                  {
-                    image:BannerSecond,
+                    image:'',
                     link:'http://www.baidu.com',
                     id:'2'
                 }
